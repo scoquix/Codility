@@ -1,4 +1,4 @@
-public class Lesson1 {
+public class Lesson01 {
     public int solution(int N) {
         if (N > 0 && N < Integer.MAX_VALUE) {
             String binaryInt = Integer.toBinaryString(N);

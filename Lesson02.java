@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-public class Lesson2 {
+public class Lesson02 {
     //TASK 1
     public static int[] solution(int[] A, int K) {
         if (A.length == 0 || K == 0)

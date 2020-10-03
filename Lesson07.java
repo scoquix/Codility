@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Lesson7 {
+public class Lesson07 {
     //-------------------------------------------------------------------------
     // BRACKETS
     //-------------------------------------------------------------------------

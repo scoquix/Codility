@@ -1,4 +1,4 @@
-public class Lesson5 {
+public class Lesson05 {
     //TASK 1
     public int solution(int[] A) {
         int zeroIncrementer = 0;

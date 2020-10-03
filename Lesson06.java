@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Lesson6 {
+public class Lesson06 {
     public int solution(int[] A) {
         int intersectsCounter = 0;
         long iPlus, jMinus;
