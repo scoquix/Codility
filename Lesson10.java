@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Lesson10 {
     //-------------------------------------------------------------------------
     // Count Factors
@@ -18,7 +21,7 @@ public class Lesson10 {
     //-------------------------------------------------------------------------
     // Flags
     //-------------------------------------------------------------------------
-    public int solution(int[] A) {
+    public int solution2(int[] A) {
         boolean[] peaks = create_peaks(A);
         int[] nextPeaks = next_peak(peaks);
         int maxFlagNum = 0;
@@ -57,5 +60,39 @@ public class Lesson10 {
             }
         }
         return peaks;
+    }
+
+
+    //-------------------------------------------------------------------------
+    // Peaks
+    //-------------------------------------------------------------------------
+    public int solution(int[] A) {
+        boolean[] peaks = create_peaks(A);
+        List<Integer> factors = new ArrayList<>();
+        create_dividers(A.length, factors);
+        int x = 0;
+        for (int factor : factors)
+            if (check_peak(peaks, factor))
+                return A.length / factor;
+        return 0;
+    }
+
+    private void create_dividers(int numFac, List<Integer> factors) {
+        for (int i = 1; i <= numFac; i++)
+            if (numFac % i == 0 && i > 2)
+                factors.add(i);
+    }
+
+    private boolean check_peak(boolean[] A, int plusI) {
+        for (int i = 0; i < A.length; i += plusI) {
+            int counter = 0;
+            for (int j = i; j < i + plusI; j++) {
+                if (A[j])
+                    counter += 1;
+            }
+            if (counter == 0)
+                return false;
+        }
+        return true;
     }
 }
