@@ -95,4 +95,38 @@ public class Lesson10 {
         }
         return true;
     }
+
+    //-------------------------------------------------------------------------
+    // MinPerimeterRectangle
+    //-------------------------------------------------------------------------
+    private static int solution3(int N) {
+        if (N < 1 || N > 1_000_000_000) return -1;
+        else {
+            int minPerimeter = 2 * (N + 1);
+            int i = 1;
+            while (i * i <= N) {
+                if (N % i == 0) {
+                    int localPerimeter = 2 * (i + N / i);
+                    if (localPerimeter < minPerimeter)
+                        minPerimeter = localPerimeter;
+                }
+                i += 1;
+            }
+            return minPerimeter;
+        }
+    }
+
+    public static void main(String[] args) {
+        // (1, 30), with a perimeter of 62,
+        // (2, 15), with a perimeter of 34,
+        // (3, 10), with a perimeter of 26,
+        // (5, 6), with a perimeter of 22.
+        System.out.println("Result: " + solution3(30));
+        System.out.println("Result: " + solution3(10));
+        System.out.println("Result: " + solution3(13));
+        System.out.println("Result: " + solution3(12));
+        System.out.println("Result: " + solution3(16));
+        System.out.println("Result: " + solution3(15));
+        System.out.println("Result: " + solution3(7));
+    }
 }
