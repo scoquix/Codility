@@ -1,8 +1,10 @@
+package com.trainings;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Lesson07 {
+public class L07_Stacks_Queues {
     //-------------------------------------------------------------------------
     // BRACKETS
     //-------------------------------------------------------------------------

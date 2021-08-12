@@ -1,7 +1,9 @@
+package com.trainings;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Lesson08 {
+public class L08_Leader {
     //-------------------------------------------------------------------------
     // EquiLeader
     //-------------------------------------------------------------------------

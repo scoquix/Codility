@@ -1,8 +1,10 @@
+package com.trainings;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Lesson06 {
+public class L06_Sorting {
     public int solution(int[] A) {
         int intersectsCounter = 0;
         long iPlus, jMinus;

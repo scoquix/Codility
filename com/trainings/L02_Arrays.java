@@ -1,9 +1,11 @@
+package com.trainings;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-public class Lesson02 {
+public class L02_Arrays {
     //TASK 1
     public static int[] solution(int[] A, int K) {
         if (A.length == 0 || K == 0)

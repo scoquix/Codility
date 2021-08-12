@@ -1,8 +1,10 @@
+package com.trainings;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Lesson04 {
+public class L04_Counting_Elements {
     public int solution(int X, int[] A) {
         if (X < 1 || X > 100000) return -1;
         else if (A.length < 1 || A.length > 100000) return -1;

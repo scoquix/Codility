@@ -1,4 +1,6 @@
-public class Lesson09 {
+package com.trainings;
+
+public class L09_Maximum_slice_problem {
     //-------------------------------------------------------------------------
     // MaxSliceSum
     //-------------------------------------------------------------------------

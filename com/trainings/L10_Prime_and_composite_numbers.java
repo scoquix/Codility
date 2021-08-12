@@ -1,7 +1,9 @@
+package com.trainings;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lesson10 {
+public class L10_Prime_and_composite_numbers {
     //-------------------------------------------------------------------------
     // Count Factors
     //-------------------------------------------------------------------------

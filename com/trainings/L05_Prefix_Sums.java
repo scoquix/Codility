@@ -1,4 +1,6 @@
-public class Lesson05 {
+package com.trainings;
+
+public class L05_Prefix_Sums {
     //TASK 1
     public int solution(int[] A) {
         int zeroIncrementer = 0;

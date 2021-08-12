@@ -1,4 +1,6 @@
-public class Lesson01 {
+package com.trainings;
+
+public class L01_Iterations {
     public int solution(int N) {
         if (N > 0 && N < Integer.MAX_VALUE) {
             String binaryInt = Integer.toBinaryString(N);

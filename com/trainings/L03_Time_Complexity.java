@@ -1,8 +1,10 @@
+package com.trainings;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Lesson03 {
+public class L03_Time_Complexity {
     public int solution(int X, int Y, int D) {
         if (X > Y || X > 1000000000 || Y > 1000000000 || D > 1000000000)
             return -1;
